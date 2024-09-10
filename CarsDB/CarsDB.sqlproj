@@ -66,5 +66,9 @@
     <Build Include="dbo\StoredProceddures\sp_CarGet.sql" />
     <Build Include="dbo\StoredProceddures\spCar_Delete.sql" />
     <Build Include="dbo\StoredProceddures\spCar_Insert.sql" />
+    <Build Include="dbo\StoredProceddures\spCars_Update.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
