@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>CarsDB</Name>
+    <Name>Database1</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{adb8c754-8fed-4e32-bd7f-ad06614b2263}</ProjectGuid>
+    <ProjectGuid>{ea2c4596-e338-44db-afb9-204422c39ca0}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>CarsDB</RootNamespace>
-    <AssemblyName>CarsDB</AssemblyName>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,22 +56,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo" />
-    <Folder Include="dbo\Table" />
-    <Folder Include="dbo\StoredProcedures" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Table\Cars.sql" />
-    <Build Include="dbo\StoredProcedures\spCar_getAll.sql" />
-    <Build Include="dbo\StoredProcedures\spCar_Get.sql" />
-    <Build Include="dbo\StoredProcedures\spCar_Delete.sql" />
-    <Build Include="dbo\StoredProcedures\spCar_Insert.sql" />
-    <Build Include="dbo\StoredProcedures\spCars_Update.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CarsDB.publish.xml" />
   </ItemGroup>
 </Project>
